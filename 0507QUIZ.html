@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	a:link { color: red; text-decoration: underline;}
+	 a:visited { color: blue; text-decoration: underline;}
+	 a:hover { color: blue; text-decoration: underline;}
+
+		*{box-sizing:border-box;}
+	.fix {overflow :auto;}
+	#wrap{
+			display:flex;flex-flow:column;width:650px;height:550px;margin: 0 auto;
+			border:1px solid black;text-align:center;
+		}
+	.header{order:1;border:1px solid black;height:150px;display:flex;flex-flow:row;text-align:center;}
+	
+	.section{order:2;display:flex;flex-flow:row;background-color: gray;}
+	.middle{order:3;display:flex;flex-flow:row;}
+	.m1{order:1;height:300px;width:100px;display:flex;flex-flow:column;padding:10px 0px 0px 0px;}
+	.s1{order:1;}
+	.s2{order:2;}
+	.m2{order:2;height:300px;width:340px;text-align:left;padding:0px 0px 0px 10px;}
+	.m3{order:3;border:1px solid black;height:300px;width:340px;display:flex;flex-flow:column;}
+	.q1{order:1;height:70px;}
+	.q2{order:2;display:flex;flex-flow:row;}
+	.r1{order:1;display:flex;flex-flow:column;}
+	.r2{order:2;text-align:left;margin:0px 0px 0px 10px;}
+	.e1{order:1;}
+	.e2{order:2;}
+	.e3{order:3;}
+	
+	
+	
+	
+	
+	.footer{order:4;background-color: green;border:1px solid black;height:50px;}
+	
+	
+
+	.sp{
+		position:static;
+		color: white;width:100px;}
+</style>
+</head>
+<body>
+<div class="fix" id="wrap">
+	<div class="header" >
+		<div style="float:left;"><img src="images/맛집.png" width="100px" height="100px"></div>
+		<div style="align:center;width:550px"><h1>맛집탐방 이야기 ^^</h1></div>
+	</div>	
+	<div class="section"><p class="sp">HOME</p><p class="sp">게시판</p><p class="sp">내정보</p></div>
+	
+	
+	
+	<div class="middle">
+	
+		<div class="m1">
+		<div class="s1"><img style="width:100px;height:140px;"src="images/l_정우성.jpg" >
+			</div>
+		<div class="s2"><img style="position:static;z-index:-1;width:100px;height:140px;="src="images/l_aside.gif" >
+		<p style="position:absolute;left:640px;top:370px;z-index:1;"><b>맛집장터</b><br>맛집 이야기<br>시작합니다</p>
+			</div>
+	
+		</div>
+		<div class="m2"><h2><오늘의 맛집></h2>
+		<br><b>오늘 방문한 곳은 맛있는 음식이 나오는 집</b>
+		<br><br><b>오늘 방문한 곳은 맛있는 음식이 나오는 집</b>
+		<br><br><b>오늘 방문한 곳은 맛있는 음식이 나오는 집</b>
+		
+		</div>
+		<div class="m3">
+			<div class="q1">
+				<input type="text" style="height:30px; width:60%; margin:0px 0px 0px 51px;" ><input type="submit" value="로그인" style="height:60px; float:right;"><br>
+				<input type="password" style="height:30px;width:60%;margin:0px 0px 0px 51px;">
+			</div>
+			<div class="q2">
+				<div class="r1">
+					<div class="e1"><img style="width:60px;height:70px;"src="images/맛집01.jpg" ></div>
+					<div class="e2"><img style="width:60px;height:70px;"src="images/맛집02.jpg" ></div>
+					<div class="e3"><img style="width:60px;height:70px;"src="images/맛집03.jpg" ></div>
+				</div>
+				<div class="r2">
+					<a href="">회원가입</a>/<a href="">ID/PW찾기</a>
+					<br><br><h2>오늘의 뉴스</h2>
+					날씨:20도<br>
+					코로나19:2명<br>
+					운세:누구보다 좋음
+					
+				</div>
+			</div>
+		
+		</div>
+	</div>
+	<div class="footer">copy</div>
+</div>
+
+</body>
+</html>
